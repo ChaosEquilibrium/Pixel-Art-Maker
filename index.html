@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel art maker</title>
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <div class="Container">
+        <h>PixelArt Maker</h>
+        <canvas id="canvas"></canvas>
+        <div class="colour-panel">
+            <div class="colors">
+                <div>
+                    <p>Background Color <span class="colour color_back"></span></p>                 
+                    <input type="color" value="#31081F" required class="inpColor backColor" id="Backgr"> </div>
+                <div>
+                    <p>Pixel Color<span class="colour color_front"></span></p>
+                    <input type="color" value="#EE8434" required class="inpColor choose-colour" id="Pix"> </div>
+            </div>
+            <button>Clear</button>
+            <a download="myPixelArt.png" hidden="true"></a>
+            <button type="submit">Save</button>
+            <input type="file" id="inp" accept="image/png" hidden="true">
+            <button>Download</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="maker.js"></script>
+</body>
+
+</html>
